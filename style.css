@@ -166,6 +166,7 @@ body {
     width: 60px;
     border: 1px solid transparent;
     cursor: pointer;
+    outline: none;
 }
 
 .search-chat-input {
@@ -175,6 +176,7 @@ body {
     padding-left: 10px;
     margin-left: 10px;
     border: 1px solid transparent;
+    outline: none;
 }
 
 /* ------------lista dei contatti------------ */
@@ -214,7 +216,46 @@ li.contact-list {
     font-size: 16px;
 }
 
+/* ------------lato chat principale con  messaggi----- */
 
+.main-message-chat {
+    height: calc(100% - 70px);
+    background-image: url('img/chat-background.png');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.message-chat {
+    height: 100%;
+}
+
+.message-writing {
+    height: 70px;
+    background-color: #fff;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.message-writing > input {
+    width: 70%;
+    height: 100%;
+    font-size: 20px;
+    padding-left: 15px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    outline: none;
+}
+
+.message-writing > i {
+    font-size: 25px;
+    cursor: pointer;
+    color: grey;
+}
 
 
 
