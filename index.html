@@ -50,7 +50,9 @@
         <!-- lista dei contatti -->
                         <div class="rubric-contact">
                             <ul>
-                                <li v-for="item in contacts" class="contact-list">
+                                <li v-for="(item, index) in contacts" class="contact-list"
+                                    @click="changeChat(index)"
+                                    :class="index == active ? 'hover-focus' : ''">
                                     <div class="contact-image-profile">
                                         <img :src="item.photo" alt="">
                                     </div>
@@ -68,9 +70,9 @@
 
                     </div> <!--chiusura lato contatti-->
 
-    <!-- lato dei messaggi della chat -->
+    <!-- lato dei messaggi della chat / messaggi-->
                     <div class="chat-side">
-        <!-- header della parte della chat -->
+        <!-- header della parte della chat / messaggi -->
                         <div class="chat-header">
                             <div class="chat-header-left">
                                 <div class="img-current-contact">
@@ -91,7 +93,7 @@
                             </div>
                         </div>
         <!-- sezione della chat con i messaggi -->
-                        <div class="main-message-chat">
+                        <!-- <div class="main-message-chat">
                             <div class="message-chat">
                                 <div class="recived-messages">
                                     <p>
@@ -115,7 +117,27 @@
                                 placeholder="scrivi un messaggio">
                                 <i class="fas fa-paper-plane"></i>
                             </div>
+                        </div> -->
+<!-- prova messa in pagina messaggi dinamicamente -->
+
+
+                        <div class="main-message-chat">
+                            <div class="first-contact-chat">
+                                <div class="message-chat" v-for="(i, chatIndex) in contacts[active].messages">
+                                    <p :class="i.status">
+                                        {{i.message}}
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="message-writing">
+                                <i class="fas fa-smile"></i>
+                                <input type="text" class="writing-input"
+                                placeholder="scrivi un messaggio">
+                                <i class="fas fa-paper-plane"></i>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>

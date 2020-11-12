@@ -190,7 +190,18 @@ li.contact-list {
     align-items: center;
     height: 100px;
     border-bottom: 1px solid #bdb9b5;
+    cursor: pointer;
 }
+
+li.contact-list:hover {
+    background-color: #bdb9b5;
+}
+
+/* --------hover fisso al click-------- */
+.hover-focus {
+    background-color: #9e9389;
+}
+/* -------- fine hover fisso al click-------- */
 
 .contact-image-profile {
     width: 60px;
@@ -233,7 +244,6 @@ li.contact-list {
 }
 
 .message-chat {
-    height: 100%;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -279,8 +289,6 @@ li.contact-list {
     align-self: flex-end;
     background-color: #25d366;
 }
-
-
 
 
 
