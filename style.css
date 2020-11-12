@@ -20,3 +20,24 @@
     height: 90%;
     background-color: blue;
 }
+
+.chat-page::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.contact-side {
+    float: left;
+    height: 100%;
+    width: 35%;
+    background-color: purple;
+}
+
+.chat-side {
+    float: left;
+    height: 100%;
+    width: 65%;
+    background-color: cadetblue;
+
+}
