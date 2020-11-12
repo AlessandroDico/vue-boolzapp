@@ -61,7 +61,7 @@
                                             {{ item.name }}
                                         </p>
                                         <p class="current-contact-state">
-                                            Lorem ipsum dolor sit amet.
+                                            {{item.thoughts}}
                                         </p>
                                     </div>
                                 </li>
@@ -76,13 +76,15 @@
                         <div class="chat-header">
                             <div class="chat-header-left">
                                 <div class="img-current-contact">
-                                    <img src="img/second.jpg" alt="">
+                                    <img :src="contacts[active].photo" alt="">
                                 </div>
                                 <div class="current-contact-info">
                                     <p class="current-contact-name">
-                                        Contatto1
+                                        {{contacts[active].name}}
                                     </p>
-                                    <p class="current-contact-state">Lorem ipsum dolor sit amet.</p>
+                                    <p class="current-contact-state">
+                                        {{contacts[active].thoughts}}
+                                    </p>
                                 </div>
                             </div>
                             <div class="chat-header-right">

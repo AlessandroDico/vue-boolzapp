@@ -7,7 +7,7 @@ var app = new Vue ({
             {
                 name: 'Contatto1',
                 photo: 'img/second.jpg',
-                visible: true,
+                thoughts: 'Sono un devon',
                 messages: [
                     {
                         date: '10/01/2020 15:30:55',
@@ -29,7 +29,7 @@ var app = new Vue ({
             {
                 name: 'Contatto2',
                 photo: 'img/third.jpg',
-                visible: false,
+                thoughts: 'Sono un cagnone',
                 messages: [
                     {
                         date: '20/03/2020 16:30:00',
@@ -51,7 +51,7 @@ var app = new Vue ({
             {
                 name: 'Contatto3',
                 photo: 'img/fourth.jpg',
-                visible: false,
+                thoughts: 'Sono un bullo',
                 messages: [
                     {
                         date: '28/03/2020 10:10:40',
@@ -73,7 +73,7 @@ var app = new Vue ({
             {
                 name: 'Contatto4',
                 photo: 'img/fifth.jpg',
-                visible: false,
+                thoughts: 'Sono stufo',
                 messages: [
                     {
                         date: '10/01/2020 15:30:55',
