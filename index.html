@@ -18,7 +18,7 @@
         <!-- header dei contatti -->
                         <div class="contact-header">
                             <div class="contact-header-left">
-                                <div class="img-profile">
+                                <div class="user-img-profile">
                                     <img src="img/profile.jpg" alt="">
                                 </div>
                             </div>
@@ -46,10 +46,29 @@
                             <input type="text" placeholder="cerca nelle chat"
                             class="search-chat-input">
                         </div>
-        <!-- lista dei contatti -->
-                        <div class="contact-list"></div>
 
-                    </div>
+        <!-- lista dei contatti -->
+                        <div class="rubric-contact">
+                            <ul>
+                                <li v-for="item in contacts" class="contact-list">
+                                    <div class="contact-image-profile">
+                                        <img :src="item.photo" alt="">
+                                    </div>
+                                    <div class="contact-info">
+                                        <p class="contact-name">
+                                            {{ item.name }}
+                                        </p>
+                                        <p class="current-contact-state">
+                                            Lorem ipsum dolor sit amet.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div> <!--chiusura lato contatti-->
+
+    <!-- lato dei messaggi della chat -->
                     <div class="chat-side">
                         <div class="chat-header">
                             <div class="chat-header-left">

@@ -6,7 +6,7 @@ var app = new Vue ({
         contacts: [
             {
                 name: 'Contatto1',
-                photo: 'second.jpg',
+                photo: 'img/second.jpg',
                 visible: true,
                 messages: [
                     {
@@ -28,7 +28,7 @@ var app = new Vue ({
             },
             {
                 name: 'Contatto2',
-                photo: 'third.jpg',
+                photo: 'img/third.jpg',
                 visible: true,
                 messages: [
                     {
@@ -50,7 +50,7 @@ var app = new Vue ({
             },
             {
                 name: 'Contatto3',
-                photo: 'fourth.jpg',
+                photo: 'img/fourth.jpg',
                 visible: true,
                 messages: [
                     {
@@ -72,7 +72,7 @@ var app = new Vue ({
             },
             {
                 name: 'Contatto4',
-                photo: 'fifth.jpg',
+                photo: 'img/fifth.jpg',
                 visible: true,
                 messages: [
                     {
