@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
 /* -----------fine regole generiche------------ */
 
 /*-------------- contenitore di tutto----------*/
@@ -32,6 +36,7 @@
     height: 100%;
     width: 35%;
     background-color: purple;
+    border-right: 1px solid black;
 }
 
 .chat-side {
@@ -41,3 +46,118 @@
     background-color: cadetblue;
 
 }
+/* ----------impostiamo gli 'header' della chat page------- */
+
+.contact-header, .chat-header {
+    height: 70px;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* .contact-header::after, .chat-header::after {
+    content: '';
+    display: table;
+    clear: both;
+} */
+
+/* ------------left contact side-------- */
+
+.img-profile {
+    width: 60px;
+    height: 60px;
+    /* border-radius: 50%; */
+    /* background-color: #fff; */
+    margin-left: 10px;
+}
+
+.img-profile > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ---------rigth contact side// right chat side------------ */
+
+.contact-header-right > i, .chat-header-right > i {
+    font-size: 25px;
+    margin: 0 10px;
+    color: grey;
+}
+
+/* -------immagine contatto corrente------ */
+
+.img-current-contact {
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+}
+
+.img-current-contact > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* -----------chat header left------- */
+.chat-header-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.current-contact-info {
+    margin-left: 15px;
+}
+
+.current-contact-info > p.current-contact-name{
+    font-size: 18px;
+}
+
+.current-contact-info > p.current-contact-state {
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
