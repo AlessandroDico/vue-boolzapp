@@ -56,12 +56,6 @@ body {
     justify-content: space-between;
 }
 
-/* .contact-header::after, .chat-header::after {
-    content: '';
-    display: table;
-    clear: both;
-} */
-
 /* ------------left contact side-------- */
 
 .img-profile {
@@ -117,19 +111,68 @@ body {
 
 .current-contact-info > p.current-contact-name{
     font-size: 18px;
+    font-weight: bold;
 }
 
 .current-contact-info > p.current-contact-state {
     font-size: 16px;
 }
 
+/* ---------contact side notifications-------------- */
 
+.active-notifications {
+    height: 70px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
+.active-notifications > i {
+    color: #fff;
+    font-size: 30px;
+    margin-left: 15px;
+    cursor: pointer;
+}
 
+.notifications-text {
+    margin-left: 25px;
+}
 
+.notifications-text > p.notifications-paragraph {
+    font-size: 18px;
+    font-weight: bold;
+}
 
+.notifications-text > p.notifications-settings {
+    font-size: 16px;
+    text-decoration: underline;
+    cursor: pointer;
+}
 
+/* -----------barra di ricerca nella chat---------- */
 
+.search-chat {
+    height: 50px;
+    background-color: brown;
+    padding: 5px;
+}
+
+.search-chat-button {
+    height: 100%;
+    width: 60px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.search-chat-input {
+    height: 100%;
+    width: calc(100% - 75px);
+    font-size: 18px;
+    padding-left: 10px;
+    margin-left: 10px;
+    border: 1px solid transparent;
+}
 
 
 

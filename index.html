@@ -7,59 +7,72 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
-        <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     </head>
     <body>
-        <div class="full-container">
-            <div class="chat-page">
-                <div class="contact-side">
-                    <div class="contact-header">
-                        <div class="contact-header-left">
-                            <div class="img-profile">
-                                <img src="img/profile.jpg" alt="">
+        <div id="root">
+            <div class="full-container">
+                <div class="chat-page">
+    <!-- lato dei contatti -->
+                    <div class="contact-side">
+        <!-- header dei contatti -->
+                        <div class="contact-header">
+                            <div class="contact-header-left">
+                                <div class="img-profile">
+                                    <img src="img/profile.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="contact-header-right">
+                                <i class="fas fa-phone"></i>
+                                <i class="fas fa-comment-alt"></i>
+                                <i class="fas fa-ellipsis-v"></i>
                             </div>
                         </div>
-                        <div class="contact-header-right">
-                            <i class="fas fa-phone"></i>
-                            <i class="fas fa-comment-alt"></i>
-                            <i class="fas fa-ellipsis-v"></i>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="chat-side">
-                    <div class="chat-header">
-                        <div class="chat-header-left">
-                            <div class="img-current-contact">
-                                <img src="img/second.jpg" alt="">
-                            </div>
-                            <div class="current-contact-info">
-                                <p class="current-contact-name">
-                                    Contatto1
+        <!-- attivazione delle notifiche -->
+                        <div class="active-notifications">
+                            <i class="fas fa-bell-slash"></i>
+                            <div class="notifications-text">
+                                <p class="notifications-paragraph">
+                                    Disattiva le notifiche
                                 </p>
-                                <p class="current-contact-state">Lorem ipsum dolor sit amet.</p>
+                                <p class="notifications-settings">impostazioni notifiche</p>
                             </div>
                         </div>
-                        <div class="chat-header-right">
-                            <i class="fas fa-search"></i>
-                            <i class="fas fa-share-alt"></i>
-                            <i class="fas fa-paperclip"></i>
-                            <i class="fas fa-ellipsis-v"></i>
+        <!-- ricerca nelle chat -->
+                        <div class="search-chat">
+                            <button class="search-chat-button">
+                                <i class="fas fa-search"></i>
+                            </button>
+                            <input type="text" placeholder="cerca nelle chat"
+                            class="search-chat-input">
                         </div>
+        <!-- lista dei contatti -->
+                        <div class="contact-list"></div>
 
                     </div>
-
+                    <div class="chat-side">
+                        <div class="chat-header">
+                            <div class="chat-header-left">
+                                <div class="img-current-contact">
+                                    <img src="img/second.jpg" alt="">
+                                </div>
+                                <div class="current-contact-info">
+                                    <p class="current-contact-name">
+                                        Contatto1
+                                    </p>
+                                    <p class="current-contact-state">Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                            <div class="chat-header-right">
+                                <i class="fas fa-search"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <i class="fas fa-paperclip"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-
-
-
-
-
-
-
             </div>
-
         </div>
 
 
