@@ -16,7 +16,7 @@ body {
 /*-------------- contenitore di tutto----------*/
 .full-container {
     height: 100vh;
-    background: linear-gradient(0deg, rgba(218,205,186,1) 85%, rgba(68,162,102,1) 85%);
+    background: linear-gradient(0deg, rgba(218,205,186,1) 85%, rgba(18,140,126,1) 85%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,8 +38,8 @@ body {
     float: left;
     height: 100%;
     width: 35%;
-    background-color: purple;
-    border-right: 1px solid black;
+    background-color: #fff;
+    border-right: 1px solid #bdb9b5;
 }
 
 .chat-side {
@@ -53,7 +53,7 @@ body {
 
 .contact-header, .chat-header {
     height: 70px;
-    background-color: brown;
+    background-color: #ece5dd;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -82,7 +82,7 @@ body {
 .contact-header-right > i, .chat-header-right > i {
     font-size: 25px;
     margin: 0 10px;
-    color: grey;
+    color: #a09e9e;
 }
 
 /* -------immagine contatto corrente------ */
@@ -125,7 +125,7 @@ body {
 
 .active-notifications {
     height: 70px;
-    background-color: lightblue;
+    background-color: #34b7f1;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -157,7 +157,7 @@ body {
 
 .search-chat {
     height: 50px;
-    background-color: brown;
+    background-color: #ece5dd;
     padding: 5px;
 }
 
@@ -167,6 +167,9 @@ body {
     border: 1px solid transparent;
     cursor: pointer;
     outline: none;
+    background-color: white;
+    font-size: 18px;
+    color: #a09e9e;
 }
 
 .search-chat-input {
@@ -177,6 +180,7 @@ body {
     margin-left: 10px;
     border: 1px solid transparent;
     outline: none;
+    color: #a09e9e;
 }
 
 /* ------------lista dei contatti------------ */
@@ -185,7 +189,7 @@ li.contact-list {
     display: flex;
     align-items: center;
     height: 100px;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #bdb9b5;
 }
 
 .contact-image-profile {
@@ -237,11 +241,12 @@ li.contact-list {
 
 .message-writing {
     height: 70px;
-    background-color: #fff;
+    background-color: #ece5dd;
     padding: 10px 15px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border-top: 1px solid #bdb9b5;
 }
 
 .message-writing > input {
@@ -249,7 +254,7 @@ li.contact-list {
     height: 100%;
     font-size: 20px;
     padding-left: 15px;
-    border: 1px solid grey;
+    border: none;
     border-radius: 5px;
     outline: none;
 }
@@ -257,7 +262,7 @@ li.contact-list {
 .message-writing > i {
     font-size: 25px;
     cursor: pointer;
-    color: grey;
+    color: #a09e9e;
 }
 
 .recived-messages, .sent-messages {
@@ -272,7 +277,7 @@ li.contact-list {
 
 .sent-messages {
     align-self: flex-end;
-    background-color: lightgreen;
+    background-color: #25d366;
 }
 
 
