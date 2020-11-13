@@ -52,7 +52,7 @@
                                 <i class="fas fa-search"></i>
                             </button>
                             <input type="text" placeholder="cerca nelle chat"
-                            class="search-chat-input">
+                            class="search-chat-input" v-model="chatSearch">
                         </div>
 
         <!-- lista dei contatti -->
@@ -60,7 +60,8 @@
                             <ul>
                                 <li v-for="(item, index) in contacts" class="contact-list"
                                     @click="changeChat(index)"
-                                    :class="index == active ? 'hover-focus' : ''">
+                                    :class="index == active ? 'hover-focus' : ''"
+                                    v-if="searchInChat(item)">
                                     <div class="contact-image-profile">
                                         <img :src="item.photo" :alt="item.name">
                                     </div>
@@ -104,7 +105,7 @@
                             </div>
                         </div>
         <!-- corpo centrale con i messaggi -->
-                        <div class="main-message-chat">
+                        <div id="box-messages" class="main-message-chat">
                             <div class="first-contact-chat">
                                 <div class="message-chat" v-for="(i, chatIndex) in contacts[active].messages"
                                 >
@@ -121,10 +122,9 @@
                             <input type="text" class="writing-input"
                             placeholder="scrivi un messaggio"
                             v-model="userWriting"
-                            @keyup.enter="sendMessages(); startReply()">
+                            @keyup.enter="sendMessages()">
                             <i class="fas fa-paper-plane"
-                                @click="sendMessages(); startReply()"
-                                ></i>
+                                @click="sendMessages()"></i>
                         </div>
 
                     </div>

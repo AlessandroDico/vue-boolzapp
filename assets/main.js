@@ -397,6 +397,7 @@ var app = new Vue ({
         ],
         active: 0,
         userWriting: '',
+        chatSearch: '',
     },
     methods:{
         // funzione che al click deve far cambiare lo stato di active e prendere il valore dell'index dell'elemento cliccato
@@ -411,23 +412,64 @@ var app = new Vue ({
                     message: this.userWriting,
                     status: 'sent-messages',
                 });
+
+                /*// soluzione alternativa senza autoReply e setTimeout esterni
+                setTimeout(()=>{
+                    this.contacts[this.active].messages.push({
+                        message: 'ok',
+                        status: 'recived-messages'
+                    });
+                }, 1000);
+                */
+                this.startReply();
+
+                this.scrollDown();
+
             }
             // console.log(this.userWriting.length);
             this.userWriting = '';
             // console.log(this.active);
         },
+
+
         // funzione che aggiunge la risposta
         autoReply(){
-            // console.log('ciao');
             this.contacts[this.active].messages.push({
                 message: 'ok',
                 status: 'recived-messages'
             });
+
+            this.scrollDown();
+
+            /*
+            var objDiv = document.getElementById("your_div");
+            objDiv.scrollTop = objDiv.scrollHeight;
+            */
         },
         // funzione che fa scattare il timer per poi richiamare autoReply
         startReply(){
             setTimeout(this.autoReply, 1000);
 
         },
+
+        //creiamo una funzione che fa seguire alla scroll bar il testo
+        scrollDown() {
+
+            setTimeout(()=> {
+
+                var objDiv = document.getElementById("box-messages");
+                objDiv.scrollTop = objDiv.scrollHeight;
+
+            }, 1000);
+        },
+
+        searchInChat(item){
+        // imposto una variabile per calcolare la prima lettera maiuscola
+            let up = this.chatSearch.charAt(0).toUpperCase();
+            if (item.name.includes(up)) {
+                return true;
+            }
+        }
+
     },
 });
