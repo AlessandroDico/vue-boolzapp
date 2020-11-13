@@ -203,6 +203,7 @@ body {
 
 .rubric-contact {
     height: calc(100% - 70px - 70px - 50px);
+    overflow-y: auto;
 }
 
 li.contact-list {
@@ -261,6 +262,7 @@ li.contact-list:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow-y: auto;
 }
 
 .message-chat {

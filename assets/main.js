@@ -11,8 +11,8 @@ var app = new Vue ({
         contacts: [
             {
                 name: 'Contatto1',
-                photo: 'img/second.jpg',
-                thoughts: 'Sono un devon',
+                photo: 'img/c_1.jpg',
+                thoughts: 'Lorem ipsum dolor sit.',
                 messages: [
                     {
                         date: '10/01/2020 15:30:55',
@@ -33,8 +33,8 @@ var app = new Vue ({
             },
             {
                 name: 'Contatto2',
-                photo: 'img/third.jpg',
-                thoughts: 'Sono affamato',
+                photo: 'img/c_2.jpg',
+                thoughts: 'Lorem ipsum dolor sit.',
                 messages: [
                     {
                         date: '20/03/2020 16:30:00',
@@ -55,8 +55,8 @@ var app = new Vue ({
             },
             {
                 name: 'Contatto3',
-                photo: 'img/fourth.jpg',
-                thoughts: 'Sono un bullo',
+                photo: 'img/c_3.jpg',
+                thoughts: 'Lorem ipsum dolor sit.',
                 messages: [
                     {
                         date: '28/03/2020 10:10:40',
@@ -77,8 +77,162 @@ var app = new Vue ({
             },
             {
                 name: 'Contatto4',
-                photo: 'img/fifth.jpg',
-                thoughts: 'Sono stufo',
+                photo: 'img/c_4.jpg',
+                thoughts: 'Lorem ipsum dolor sit.',
+                messages: [
+                    {
+                        date: '10/01/2020 15:30:55',
+                        message: 'Lo sai che ha aperto una nuova pizzeria?',
+                        status: 'sent-messages'
+                    },
+                    {
+                        date: '10/01/2020 15:50:00',
+                        message: 'Si, ma preferirei andare al cinema',
+                        status: 'recived-messages'
+                    },
+                    {
+                        date: '28/03/2020 16:15:22',
+                        message: 'Ah scusa!',
+                        status: 'sent-messages'
+                    }
+                ]
+            },
+            {
+                name: 'Contatto5',
+                photo: 'img/c_5.jpg',
+                thoughts: 'Lorem ipsum dolor sit.',
+                messages: [
+                    {
+                        date: '10/01/2020 15:30:55',
+                        message: 'Lo sai che ha aperto una nuova pizzeria?',
+                        status: 'sent-messages'
+                    },
+                    {
+                        date: '10/01/2020 15:50:00',
+                        message: 'Si, ma preferirei andare al cinema',
+                        status: 'recived-messages'
+                    },
+                    {
+                        date: '28/03/2020 16:15:22',
+                        message: 'Ah scusa!',
+                        status: 'sent-messages'
+                    }
+                ]
+            },
+            {
+                name: 'Contatto6',
+                photo: 'img/c_6.jpg',
+                thoughts: 'Lorem ipsum dolor sit.',
+                messages: [
+                    {
+                        date: '10/01/2020 15:30:55',
+                        message: 'Lo sai che ha aperto una nuova pizzeria?',
+                        status: 'sent-messages'
+                    },
+                    {
+                        date: '10/01/2020 15:50:00',
+                        message: 'Si, ma preferirei andare al cinema',
+                        status: 'recived-messages'
+                    },
+                    {
+                        date: '28/03/2020 16:15:22',
+                        message: 'Ah scusa!',
+                        status: 'sent-messages'
+                    }
+                ]
+            },
+            {
+                name: 'Contatto7',
+                photo: 'img/c_7.jpg',
+                thoughts: 'Lorem ipsum dolor sit.',
+                messages: [
+                    {
+                        date: '10/01/2020 15:30:55',
+                        message: 'Lo sai che ha aperto una nuova pizzeria?',
+                        status: 'sent-messages'
+                    },
+                    {
+                        date: '10/01/2020 15:50:00',
+                        message: 'Si, ma preferirei andare al cinema',
+                        status: 'recived-messages'
+                    },
+                    {
+                        date: '28/03/2020 16:15:22',
+                        message: 'Ah scusa!',
+                        status: 'sent-messages'
+                    }
+                ]
+            },
+            {
+                name: 'Contatto8',
+                photo: 'img/c_8.jpg',
+                thoughts: 'Lorem ipsum dolor sit.',
+                messages: [
+                    {
+                        date: '10/01/2020 15:30:55',
+                        message: 'Lo sai che ha aperto una nuova pizzeria?',
+                        status: 'sent-messages'
+                    },
+                    {
+                        date: '10/01/2020 15:50:00',
+                        message: 'Si, ma preferirei andare al cinema',
+                        status: 'recived-messages'
+                    },
+                    {
+                        date: '28/03/2020 16:15:22',
+                        message: 'Ah scusa!',
+                        status: 'sent-messages'
+                    }
+                ]
+            },
+            {
+                name: 'Contatto9',
+                photo: 'img/c_9.jpg',
+                thoughts: 'Lorem ipsum dolor sit.',
+                messages: [
+                    {
+                        date: '10/01/2020 15:30:55',
+                        message: 'Lo sai che ha aperto una nuova pizzeria?',
+                        status: 'sent-messages'
+                    },
+                    {
+                        date: '10/01/2020 15:50:00',
+                        message: 'Si, ma preferirei andare al cinema',
+                        status: 'recived-messages'
+                    },
+                    {
+                        date: '28/03/2020 16:15:22',
+                        message: 'Ah scusa!',
+                        status: 'sent-messages'
+                    }
+                ]
+            },
+            {
+                name: 'Contatto10',
+                photo: 'img/c_10.jpg',
+                thoughts: 'Lorem ipsum dolor sit.',
+                messages: [
+                    {
+                        date: '10/01/2020 15:30:55',
+                        message: 'Lo sai che ha aperto una nuova pizzeria?',
+                        status: 'sent-messages'
+                    },
+                    {
+                        date: '10/01/2020 15:50:00',
+                        message: 'Si, ma preferirei andare al cinema',
+                        status: 'recived-messages'
+                    },
+                    {
+                        date: '28/03/2020 16:15:22',
+                        message: 'Ah scusa!',
+                        status: 'sent-messages'
+                    }
+                ]
+            },
+            {
+                name: 'Contatto11',
+                photo: 'img/c_11.jpg',
+                thoughts: 'Lorem ipsum dolor sit.',
                 messages: [
                     {
                         date: '10/01/2020 15:30:55',
