@@ -16,19 +16,44 @@ var app = new Vue ({
                 messages: [
                     {
                         date: '10/01/2020 15:30:55',
-                        message: 'Hai portato a spasso il cane?',
+                        message: 'Ue come va?',
                         status: 'sent-messages'
                     },
                     {
                         date: '10/01/2020 15:50:00',
-                        message: 'Ricordati di dargli da mangiare',
-                        status: 'sent-messages'
+                        message: 'Tutto bene',
+                        status: 'recived-messages'
                     },
                     {
                         date: '10/01/2020 16:15:22',
-                        message: 'Tutto fatto!',
+                        message: 'Tu?',
                         status: 'recived-messages'
-                    }
+                    },
+                    {
+                        date: '10/01/2020 16:20:22',
+                        message: 'Tutto bene anche io',
+                        status: 'sent-messages'
+                    },
+                    {
+                        date: '10/01/2020 16:25:22',
+                        message: 'Hai bisogno?',
+                        status: 'recived-messages'
+                    },
+                    {
+                        date: '10/01/2020 16:27:22',
+                        message: 'no tu?',
+                        status: 'sent-messages'
+                    },
+                    {
+                        date: '10/01/2020 16:29:22',
+                        message: 'Nemmeno io',
+                        status: 'recived-messages'
+                    },
+                    {
+                        date: '10/01/2020 16:30:22',
+                        message: 'A posto allora',
+                        status: 'sent-messages'
+                    },
                 ]
             },
             {
@@ -82,18 +107,18 @@ var app = new Vue ({
                 messages: [
                     {
                         date: '10/01/2020 15:30:55',
-                        message: 'Lo sai che ha aperto una nuova pizzeria?',
+                        message: 'Hai portato a spasso il cane?',
                         status: 'sent-messages'
                     },
                     {
                         date: '10/01/2020 15:50:00',
-                        message: 'Si, ma preferirei andare al cinema',
-                        status: 'recived-messages'
+                        message: 'Ricordati di dargli da mangiare',
+                        status: 'sent-messages'
                     },
                     {
                         date: '28/03/2020 16:15:22',
-                        message: 'Ah scusa!',
-                        status: 'sent-messages'
+                        message: 'Tutto fatto!',
+                        status: 'recived-messages'
                     }
                 ]
             },
@@ -253,12 +278,22 @@ var app = new Vue ({
             },
         ],
         active: 0,
+        userWriting: '',
     },
     methods:{
         // funzione che al click deve far cambiare lo stato di active e prendere il valore dell'index dell'elemento cliccato
         changeChat(index){
             this.active = index;
             // console.log(index);
+        },
+        sendMessages(){
+            console.log(this.userWriting);
+            this.contacts[this.active].messages.push({
+                message: this.userWriting,
+                status: 'sent-messages'
+            });
+            this.userWriting = '';
+            // console.log(this.active);
         }
     },
 });
