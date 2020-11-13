@@ -8,6 +8,9 @@ var app = new Vue ({
             photo: 'img/profile.jpg',
             thoughts: 'Sono un pug',
         },
+        // mounted(){
+        //     this.start();
+        // },
         contacts: [
             {
                 name: 'Contatto1',
@@ -287,13 +290,25 @@ var app = new Vue ({
             // console.log(index);
         },
         sendMessages(){
-            console.log(this.userWriting);
             this.contacts[this.active].messages.push({
                 message: this.userWriting,
                 status: 'sent-messages'
             });
             this.userWriting = '';
             // console.log(this.active);
-        }
+        },
+        // funzione che aggiunge la risposta
+        autoReply(){
+            // console.log('ciao');
+            this.contacts[this.active].messages.push({
+                message: 'ok',
+                status: 'recived-messages'
+            });
+        },
+        // funzione che fa scattare il timer per poi richiamare autoReply
+        startReply(){
+            setTimeout(this.autoReply, 1000);
+
+        },
     },
 });

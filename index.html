@@ -121,9 +121,10 @@
                             <input type="text" class="writing-input"
                             placeholder="scrivi un messaggio"
                             v-model="userWriting"
-                            @keyup.enter="sendMessages">
+                            @keyup.enter="sendMessages(); startReply()">
                             <i class="fas fa-paper-plane"
-                                @click="sendMessages"></i>
+                                @click="sendMessages(); startReply()"
+                                ></i>
                         </div>
 
                     </div>
