@@ -22,7 +22,7 @@ body {
     align-items: center;
 }
 
-/*-------------- contenitore chat page----------*/
+/*-------------- contenitore full chat page----------*/
 .chat-page {
     width: 80%;
     height: 90%;
@@ -60,12 +60,15 @@ body {
 }
 
 /* ------------left contact side-------- */
+.contact-header-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .user-img-profile {
     width: 60px;
     height: 60px;
-    /* border-radius: 50%; */
-    /* background-color: #fff; */
     margin-left: 10px;
 }
 
@@ -75,6 +78,19 @@ body {
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
+}
+
+.user-info {
+    margin-left: 15px;
+}
+
+.user-info > p.user-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.user-info > p.user-thoughts {
+    font-size: 16px;
 }
 
 /* ---------rigth contact side// right chat side------------ */
@@ -185,6 +201,10 @@ body {
 
 /* ------------lista dei contatti------------ */
 
+.rubric-contact {
+    height: calc(100% - 70px - 70px - 50px);
+}
+
 li.contact-list {
     display: flex;
     align-items: center;
@@ -234,7 +254,7 @@ li.contact-list:hover {
 /* ------------lato chat principale con  messaggi----- */
 
 .main-message-chat {
-    height: calc(100% - 70px);
+    height: calc(100% - 70px - 70px);
     background-image: url('img/chat-background.png');
     background-position: center;
     background-size: cover;

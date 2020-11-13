@@ -19,7 +19,15 @@
                         <div class="contact-header">
                             <div class="contact-header-left">
                                 <div class="user-img-profile">
-                                    <img src="img/profile.jpg" alt="">
+                                    <img :src="user.photo" alt="">
+                                </div>
+                                <div class="user-info">
+                                    <p class="user-name">
+                                        {{user.name}}
+                                    </p>
+                                    <p class="user-thoughts">
+                                        {{user.thoughts}}
+                                    </p>
                                 </div>
                             </div>
                             <div class="contact-header-right">
@@ -54,7 +62,7 @@
                                     @click="changeChat(index)"
                                     :class="index == active ? 'hover-focus' : ''">
                                     <div class="contact-image-profile">
-                                        <img :src="item.photo" alt="">
+                                        <img :src="item.photo" :alt="item.name">
                                     </div>
                                     <div class="contact-info">
                                         <p class="contact-name">
@@ -76,7 +84,8 @@
                         <div class="chat-header">
                             <div class="chat-header-left">
                                 <div class="img-current-contact">
-                                    <img :src="contacts[active].photo" alt="">
+                                    <img :src="contacts[active].photo"
+                                        :alt="contacts[active].name">
                                 </div>
                                 <div class="current-contact-info">
                                     <p class="current-contact-name">
@@ -132,12 +141,12 @@
                                 </div>
 
                             </div>
-                            <div class="message-writing">
-                                <i class="fas fa-smile"></i>
-                                <input type="text" class="writing-input"
-                                placeholder="scrivi un messaggio">
-                                <i class="fas fa-paper-plane"></i>
-                            </div>
+                        </div>
+                        <div class="message-writing">
+                            <i class="fas fa-smile"></i>
+                            <input type="text" class="writing-input"
+                            placeholder="scrivi un messaggio">
+                            <i class="fas fa-paper-plane"></i>
                         </div>
 
                     </div>

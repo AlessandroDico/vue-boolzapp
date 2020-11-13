@@ -3,6 +3,11 @@
 var app = new Vue ({
     el: '#root',
     data: {
+        user: {
+            name: 'User',
+            photo: 'img/profile.jpg',
+            thoughts: 'Sono un pug',
+        },
         contacts: [
             {
                 name: 'Contatto1',
@@ -29,7 +34,7 @@ var app = new Vue ({
             {
                 name: 'Contatto2',
                 photo: 'img/third.jpg',
-                thoughts: 'Sono un cagnone',
+                thoughts: 'Sono affamato',
                 messages: [
                     {
                         date: '20/03/2020 16:30:00',
