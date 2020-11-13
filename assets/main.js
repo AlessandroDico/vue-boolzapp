@@ -464,9 +464,10 @@ var app = new Vue ({
         },
 
         searchInChat(item){
-        // imposto una variabile per calcolare la prima lettera maiuscola
-            let up = this.chatSearch.charAt(0).toUpperCase();
-            if (item.name.includes(up)) {
+        // imposto una variabile per calcolare la prima lettera come maiuscola
+            // let up = this.chatSearch.charAt(0).toUpperCase();
+        //se rimetto up devo metterlo anche tra parentesi a posto di this.chatSearch
+            if (item.name.includes(this.chatSearch)) {
                 return true;
             }
         }
