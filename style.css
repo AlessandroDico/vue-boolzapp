@@ -305,6 +305,8 @@ li.contact-list:hover {
     padding: 15px 15px;
     border-radius: 10px;
     margin: 10px;
+    align-self: flex-start;
+/* ho messo flex-start(su recived) e flex-end(sent) perchè se metto solo flex-end su sent le larghezze dei box delle chat risultano diverse a parità di testo */
 }
 
 .sent-messages {

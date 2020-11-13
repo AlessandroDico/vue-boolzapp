@@ -8,9 +8,6 @@ var app = new Vue ({
             photo: 'img/profile.jpg',
             thoughts: 'Sono un pug',
         },
-        // mounted(){
-        //     this.start();
-        // },
         contacts: [
             {
                 name: 'Contatto1',
