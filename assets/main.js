@@ -405,10 +405,14 @@ var app = new Vue ({
             // console.log(index);
         },
         sendMessages(){
-            this.contacts[this.active].messages.push({
-                message: this.userWriting,
-                status: 'sent-messages'
-            });
+        // se l'utente ha digitato almeno un carattere invia il messaggio
+            if (this.userWriting.length > 0 ) {
+                this.contacts[this.active].messages.push({
+                    message: this.userWriting,
+                    status: 'sent-messages',
+                });
+            }
+            // console.log(this.userWriting.length);
             this.userWriting = '';
             // console.log(this.active);
         },
