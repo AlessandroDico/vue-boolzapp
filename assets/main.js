@@ -486,7 +486,12 @@ var app = new Vue ({
                 */
                 this.startReply();
 
-                this.scrollDown();
+                // this.scrollDown();
+
+                // soluzione per scroll down senza setTimeout
+                this.$nextTick(function(){
+                    document.getElementById("box-messages").scrollTop = document.getElementById("box-messages").scrollHeight;
+                });
 
             }
             // console.log(this.userWriting.length);
@@ -503,7 +508,13 @@ var app = new Vue ({
                 hiddenChatMenu: 'hidden-menu'
             });
 
-            this.scrollDown();
+
+            // soluzione per scroll down senza setTimeout
+            this.$nextTick(function(){
+                document.getElementById("box-messages").scrollTop = document.getElementById("box-messages").scrollHeight;
+            });
+
+            // this.scrollDown();
 
             /*
             var objDiv = document.getElementById("your_div");
@@ -517,15 +528,15 @@ var app = new Vue ({
         },
 
         //creiamo una funzione che fa seguire alla scroll bar il testo
-        scrollDown() {
-
-            setTimeout(()=> {
-
-                var objDiv = document.getElementById("box-messages");
-                objDiv.scrollTop = objDiv.scrollHeight;
-
-            }, 1000);
-        },
+        // scrollDown() {
+        //
+        //     setTimeout(()=> {
+        //
+        //         var objDiv = document.getElementById("box-messages");
+        //         objDiv.scrollTop = objDiv.scrollHeight;
+        //
+        //     }, 1000);
+        // },
 
         searchInChat(item){
         // imposto una variabile per calcolare la prima lettera come maiuscola
@@ -541,14 +552,13 @@ var app = new Vue ({
                 this.contacts[this.active].messages[index].hiddenChatMenu = 'hidden-menu';
             }
         },
-        prova(index){
-            if (this.contacts[this.active].messages[index].hiddenChatMenu == 'show-menu') {
-                this.contacts[this.active].messages[index].hiddenChatMenu = 'hidden-menu';
-            }
-        }
+        // prova(index){
+        //     if (this.contacts[this.active].messages[index].hiddenChatMenu == 'show-menu') {
+        //         this.contacts[this.active].messages[index].hiddenChatMenu = 'hidden-menu';
+        //     }
+        // },
+
 
     },
-    mounted() {
-        console.log(this.contacts[this.active].messages[3].hiddenChatMenu);
-    }
+
 });
