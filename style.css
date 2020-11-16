@@ -269,6 +269,7 @@ li.contact-list:hover {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    position: relative;
 }
 
 .message-writing {
@@ -314,12 +315,22 @@ li.contact-list:hover {
     background-color: #25d366;
 }
 
+/* cambia colore quando è pronto ad inviare */
+.message-writing > i.ready-color {
+    color: #25d366;
+}
 
+/* ---------menu nascosto per cancellare i messaggi---------- */
 
+/* .recived-messages + .hiddenMenu {
+    position: absolute;
+    align-self: flex-start;
+}
+.sent-messages + .hiddenMenu {
+    align-self: flex-end;
+    position: absolute;
 
-
-
-
+} */
 
 
 

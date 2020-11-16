@@ -1,3 +1,4 @@
+
 // console.log('hello world');
 
 var app = new Vue ({
@@ -469,7 +470,7 @@ var app = new Vue ({
             if (item.name.includes(up)) {
                 return true;
             }
-        }
+        },
 
     },
 });

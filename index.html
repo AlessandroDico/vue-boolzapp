@@ -107,9 +107,9 @@
         <!-- corpo centrale con i messaggi -->
                         <div id="box-messages" class="main-message-chat">
                             <div class="first-contact-chat">
-                                <div class="message-chat" v-for="(i, chatIndex) in contacts[active].messages"
-                                >
-                                    <p :class="i.status">
+                                <div class="message-chat" v-for="(i, chatIndex) in contacts[active].messages">
+                                    <p :class="i.status"
+                                        class="text-message-box">
                                         {{i.message}}
                                     </p>
                                 </div>
@@ -124,7 +124,8 @@
                             v-model="userWriting"
                             @keyup.enter="sendMessages()">
                             <i class="fas fa-paper-plane"
-                                @click="sendMessages()"></i>
+                                @click="sendMessages()"
+                                :class="(userWriting.length > 0) ? 'ready-color' : ''"></i>
                         </div>
 
                     </div>
