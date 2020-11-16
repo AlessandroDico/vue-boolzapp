@@ -114,7 +114,7 @@
                                     </p>
                                     <div :class="i.hiddenChatMenu">
                                         <p>Info messaggio</p>
-                                        <p>Cancella messaggio</p>
+                                        <p @click="removeElement(chatIndex)">Cancella messaggio</p>
                                     </div>
                                 </div>
 

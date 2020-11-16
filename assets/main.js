@@ -552,12 +552,18 @@ var app = new Vue ({
                 this.contacts[this.active].messages[index].hiddenChatMenu = 'hidden-menu';
             }
         },
-        // prova(index){
-        //     if (this.contacts[this.active].messages[index].hiddenChatMenu == 'show-menu') {
-        //         this.contacts[this.active].messages[index].hiddenChatMenu = 'hidden-menu';
-        //     }
-        // },
 
+// --------------------DUE FUNZIONI PER CANCELLARE UN MESSAGGIO------
+// metodo 1
+      //   removeElement(index) {
+      //     this.contacts[this.active].messages.splice(index, 1);
+      // },
+
+ // metodo 2
+        removeElement(index) {
+          this.$delete(this.contacts[this.active].messages, index);
+      },
+// --------------------FINE FUNZIONI PER CANCELLARE UN MESSAGGIO------
 
     },
 
