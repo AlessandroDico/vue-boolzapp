@@ -109,9 +109,13 @@
                             <div class="first-contact-chat">
                                 <div class="message-chat" v-for="(i, chatIndex) in contacts[active].messages">
                                     <p :class="i.status"
-                                        class="text-message-box">
+                                        class="text-message-box" @click="showHiddenMenu(chatIndex)">
                                         {{i.message}}
                                     </p>
+                                    <div :class="i.hiddenChatMenu">
+                                        <p>Info messaggio</p>
+                                        <p>Cancella messaggio</p>
+                                    </div>
                                 </div>
 
                             </div>

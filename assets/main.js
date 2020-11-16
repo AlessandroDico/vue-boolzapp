@@ -18,42 +18,50 @@ var app = new Vue ({
                     {
                         date: '10/01/2020 15:30:55',
                         message: 'Ue come va?',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '10/01/2020 15:50:00',
                         message: 'Tutto bene',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '10/01/2020 16:15:22',
                         message: 'Tu?',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '10/01/2020 16:20:22',
                         message: 'Tutto bene anche io',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '10/01/2020 16:25:22',
                         message: 'Hai bisogno?',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '10/01/2020 16:27:22',
                         message: 'no tu?',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '10/01/2020 16:29:22',
                         message: 'Nemmeno io',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '10/01/2020 16:30:22',
                         message: 'A posto allora',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                 ]
             },
@@ -65,27 +73,32 @@ var app = new Vue ({
                     {
                         date: '20/03/2020 16:30:00',
                         message: 'Ciao come stai?',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '20/03/2020 16:30:55',
                         message: 'Bene grazie! Stasera ci vediamo?',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '20/03/2020 16:35:00',
                         message: 'Mi piacerebbe ma devo andare a fare la spesa.',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '20/03/2020 16:38:00',
                         message: 'Ho finito le ossa.',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '20/03/2020 16:45:00',
                         message: 'Ah mi spiace.',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                 ]
             },
@@ -97,32 +110,38 @@ var app = new Vue ({
                     {
                         date: '28/03/2020 10:10:40',
                         message: 'Ciao come stai?',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 10:20:10',
                         message: 'Bene grazie?',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:15:22',
                         message: 'Son contento',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:20:22',
                         message: 'Anche io grazie',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:25:22',
                         message: 'E\' sempre un piacere parlare con te',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:35:22',
                         message: 'Grazie',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                 ]
             },
@@ -134,37 +153,44 @@ var app = new Vue ({
                     {
                         date: '10/01/2020 15:30:55',
                         message: 'Hai portato a spasso il cane?',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '10/01/2020 15:50:00',
                         message: 'Ricordati di dargli da mangiare',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:15:22',
                         message: 'Tranquillo!',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:25:22',
                         message: 'Il cane è scappato!',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:27:22',
                         message: 'Rincorrilo!',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:28:22',
                         message: 'Sai che non posso',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:30:22',
                         message: 'Tornerà',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                 ]
             },
@@ -176,17 +202,20 @@ var app = new Vue ({
                     {
                         date: '10/01/2020 15:30:55',
                         message: 'Hey ciao',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '10/01/2020 15:30:55',
                         message: 'Quanto tempo!',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '10/01/2020 15:50:00',
                         message: 'ci sarà un motivo',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
 
                 ]
@@ -199,27 +228,32 @@ var app = new Vue ({
                     {
                         date: '10/01/2020 15:30:55',
                         message: 'Lo sai che ha aperto una nuova pizzeria?',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '10/01/2020 15:50:00',
                         message: 'Sai che sono intollerante?',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:15:22',
                         message: 'Ah non lo sapevo!',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:25:22',
                         message: 'Ma l\'altro giorno hai mangiato la pizza',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:35:22',
                         message: 'Ma in fatti non sono itollerante alla pizza....',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
 
                 ]
@@ -232,22 +266,26 @@ var app = new Vue ({
                     {
                         date: '10/01/2020 15:30:55',
                         message: 'Ciao!',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '20/01/2020 16:30:55',
                         message: 'Ciao!',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '22/01/2020 17:30:55',
                         message: 'Ciao!',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '29/01/2020 18:30:55',
                         message: 'Ciao!',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
 
                 ]
@@ -260,22 +298,26 @@ var app = new Vue ({
                     {
                         date: '10/01/2020 15:30:55',
                         message: 'Hai sentito?',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '10/01/2020 15:50:00',
                         message: 'No',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:15:22',
                         message: 'Ah scusa!',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:15:22',
                         message: 'Tranquillo',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                 ]
             },
@@ -287,27 +329,32 @@ var app = new Vue ({
                     {
                         date: '10/01/2020 15:30:55',
                         message: 'Ciao!',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '10/01/2020 15:30:55',
                         message: 'Eri alla festa?',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '10/01/2020 15:50:00',
                         message: 'Si ero li',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:15:22',
                         message: 'Non ti ho visto!',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:25:22',
                         message: '-.-',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                 ]
             },
@@ -319,17 +366,20 @@ var app = new Vue ({
                     {
                         date: '10/01/2020 15:30:55',
                         message: 'Ciao',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '10/01/2020 15:50:00',
                         message: 'Ciao',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:15:22',
                         message: 'Ciao',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     }
                 ]
             },
@@ -341,57 +391,68 @@ var app = new Vue ({
                     {
                         date: '10/01/2020 15:30:55',
                         message: 'Stasera esci?',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '10/01/2020 15:50:00',
                         message: 'Si',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '10/01/2020 15:50:00',
                         message: 'dove ci vediamo?',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:15:22',
                         message: 'Solito posto',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:25:22',
                         message: 'Quale solito?',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:35:22',
                         message: 'Solito 1 o solito 2?',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:45:22',
                         message: 'Solito 2',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:47:22',
                         message: 'Manda indirizzo',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:55:22',
                         message: 'Via Solito 2',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:15:22',
                         message: 'Meglio che parto ora',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:15:22',
                         message: 'Ok a dopo',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        hiddenChatMenu: 'hidden-menu',
                     },
                 ]
             },
@@ -412,6 +473,7 @@ var app = new Vue ({
                 this.contacts[this.active].messages.push({
                     message: this.userWriting,
                     status: 'sent-messages',
+                    hiddenChatMenu: 'hidden-menu'
                 });
 
                 /*// soluzione alternativa senza autoReply e setTimeout esterni
@@ -437,7 +499,8 @@ var app = new Vue ({
         autoReply(){
             this.contacts[this.active].messages.push({
                 message: 'ok',
-                status: 'recived-messages'
+                status: 'recived-messages',
+                hiddenChatMenu: 'hidden-menu'
             });
 
             this.scrollDown();
@@ -471,6 +534,21 @@ var app = new Vue ({
                 return true;
             }
         },
+        showHiddenMenu(index){
+            if (this.contacts[this.active].messages[index].hiddenChatMenu == 'hidden-menu') {
+                this.contacts[this.active].messages[index].hiddenChatMenu = 'show-menu';
+            }else {
+                this.contacts[this.active].messages[index].hiddenChatMenu = 'hidden-menu';
+            }
+        },
+        prova(index){
+            if (this.contacts[this.active].messages[index].hiddenChatMenu == 'show-menu') {
+                this.contacts[this.active].messages[index].hiddenChatMenu = 'hidden-menu';
+            }
+        }
 
     },
+    mounted() {
+        console.log(this.contacts[this.active].messages[3].hiddenChatMenu);
+    }
 });

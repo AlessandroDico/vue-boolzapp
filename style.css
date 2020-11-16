@@ -322,16 +322,42 @@ li.contact-list:hover {
 
 /* ---------menu nascosto per cancellare i messaggi---------- */
 
-/* .recived-messages + .hiddenMenu {
+.recived-messages + .hidden-menu {
+    display: none;
+}
+.sent-messages + .hidden-menu {
+    display: none;
+}
+
+.recived-messages + .show-menu {
+    display: block;
     position: absolute;
     align-self: flex-start;
+    bottom: -10px;
+    left: 55px;
+    background-color: #7e9e5f;
+    border-radius: 5px;
+    padding: 5px;
 }
-.sent-messages + .hiddenMenu {
+
+.sent-messages + .show-menu {
+    display: block;
     align-self: flex-end;
     position: absolute;
+    bottom: -10px;
+    right: 55px;
+    background-color: #7e9e5f;
+    border-radius: 5px;
+    padding: 5px;
+}
 
-} */
+.sent-messages + .show-menu > p {
+    cursor: pointer;
+}
 
+.recived-messages + .show-menu > p {
+    cursor: pointer;
+}
 
 
 
