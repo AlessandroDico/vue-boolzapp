@@ -582,8 +582,16 @@ var app = new Vue ({
         funzione(index){
             this.attualIndex = index;
             console.log(this.contacts[this.active].messages[index]);
-            this.contacts[this.active].messages[index].hiddenChatMenu = 'show-menu'
+            // this.contacts[this.active].messages[index].hiddenChatMenu = 'show-menu'
+            // per aggiungere una proprietà ad un oggetto la 'formula' qua sopra sarebbe funzionante se non che Vue non legge proprietà aggiunte dopo.. per farlo c'è un modo per 'raggirare' questa cosa ed è col la seguente 'formula'
+            //  Vue.set più globale
+            // this.$set più 'specifico'
+            // seguiti da (object, propertyName, Value)
+            // this.$set(object, propertyName, Value)
+            // se volessi applicare più proprietà this.someObject = Object.assign({}, this.someObject, { a: 1, b: 2 })
+            this.$set(this.contacts[this.active].messages[index], 'hiddenChatMenu', 'show-menu')
         },
+
 
 
 // --------------------DUE FUNZIONI PER CANCELLARE UN MESSAGGIO------
