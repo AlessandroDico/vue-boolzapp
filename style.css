@@ -328,6 +328,7 @@ li.contact-list:hover {
 .sent-messages + .hidden-menu {
     display: none;
 }
+<<<<<<< HEAD
 
 .recived-messages + .show-menu {
     display: block;
@@ -339,6 +340,36 @@ li.contact-list:hover {
     border-radius: 5px;
     padding: 5px;
 }
+=======
+.recived-messages + .show-menu {
+    display: block;
+    position: absolute;
+    align-self: flex-start;
+    bottom: -10px;
+    left: 55px;
+    background-color: #7e9e5f;
+    border-radius: 5px;
+    padding: 5px;
+}
+.sent-messages + .show-menu {
+    display: block;
+    align-self: flex-end;
+    position: absolute;
+    bottom: -10px;
+    right: 55px;
+    background-color: #7e9e5f;
+    border-radius: 5px;
+    padding: 5px;
+}
+.sent-messages + .show-menu > p {
+    cursor: pointer;
+}
+.recived-messages + .show-menu > p {
+    cursor: pointer;
+} */
+
+/* ALTERNATIVA */
+>>>>>>> main
 
 .sent-messages + .show-menu {
     display: block;
@@ -351,6 +382,7 @@ li.contact-list:hover {
     padding: 5px;
 }
 
+<<<<<<< HEAD
 .sent-messages + .show-menu > p {
     cursor: pointer;
 }
@@ -360,8 +392,59 @@ li.contact-list:hover {
 } */
 
 /* ALTERNATIVA */
+=======
+/* .hidden-class {
+    display: none;
+} */
+.recived-messages + .deleteMenu {
+    display: none;
+    position: absolute;
+    align-self: flex-start;
+    bottom: -10px;
+    left: 55px;
+    background-color: #7e9e5f;
+    border-radius: 5px;
+    padding: 5px;
+}
+.sent-messages + .deleteMenu {
+    display: none;
+    align-self: flex-end;
+    position: absolute;
+    bottom: -10px;
+    right: 55px;
+    background-color: #7e9e5f;
+    border-radius: 5px;
+    padding: 5px;
+}
 
+.recived-messages + .deleteMenu {
+    display: block;
+    position: absolute;
+    align-self: flex-start;
+    bottom: -10px;
+    left: 55px;
+    background-color: #7e9e5f;
+    border-radius: 5px;
+    padding: 5px;
+}
 
+.sent-messages + .deleteMenu {
+    display: block;
+    align-self: flex-end;
+    position: absolute;
+    bottom: -10px;
+    right: 55px;
+    background-color: #7e9e5f;
+    border-radius: 5px;
+    padding: 5px;
+}
+>>>>>>> main
+
+.sent-messages + .deleteMenu > p {
+    cursor: pointer;
+}
+
+<<<<<<< HEAD
 /* .hidden-class {
     display: none;
 } */
@@ -412,6 +495,8 @@ li.contact-list:hover {
     cursor: pointer;
 }
 
+=======
+>>>>>>> main
 .recived-messages + .deleteMenu > p {
     cursor: pointer;
 }

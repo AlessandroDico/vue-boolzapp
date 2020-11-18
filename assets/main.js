@@ -522,6 +522,12 @@ var app = new Vue ({
             // soluzione per scroll down senza setTimeout
             this.$nextTick(function(){
                 document.getElementById("box-messages").scrollTop = document.getElementById("box-messages").scrollHeight;
+<<<<<<< HEAD
+=======
+        // il $nextTick ci serve per far si che lo scroll avvenga una volta che si è aggiornato il dom altrimenti farebbe scroll solo in parte in quanto appena viene dato il comando lui fa scroll (vue.nextTick == $nextTick)
+        //scrollTop è una proprietà che se usata element.scrollTop ci restituisce il numero di px da dover 'scrollare' se invece è usata element.scrollTop = nPX; gli diciamo di quanti px deve fare scroll
+        //in questo caso gli diciamo fai scroll di scrollHeight ovvero l'altezza intera del contenuto di un div (per uno scroll costante)
+>>>>>>> main
             });
 
             // this.scrollDown();
@@ -571,6 +577,7 @@ var app = new Vue ({
         },
 
 
+<<<<<<< HEAD
         // pushNuovaKey(){
         //     if (this.hiddenChatMenu == 'hidden-menu') {
         //         this.contacts[this.active].messages[0].hiddenChatMenu = 'show-menu',
@@ -578,6 +585,8 @@ var app = new Vue ({
         //         console.log(this.contacts[this.active].messages);
         //     }
         // },
+=======
+>>>>>>> main
 
         funzione(index){
             this.attualIndex = index;
@@ -622,6 +631,19 @@ var app = new Vue ({
                   this.$set(elementoCorrente.messages[j], 'hiddenChatMenu', 'hidden-menu')
               }
           }
+<<<<<<< HEAD
+=======
+//pwe aggiungere una proprietà ad un oggetto devo tenere conto che Vue non la legge se la aggiungo dopo come ad esempio:
+// this.contacts[this.active].messages[index].hiddenChatMenu = 'show-menu'
+//cosi facendo aggiungo ad ogni oggetto dell'array messages una chiave hiddenChatMenu con valore 'show-menu'
+//però cosi non la vedrebbe mai Vue o meglio la vede ma non me la fa usare nell'html
+//per raggirare questa cosa uso il $set che con quella 'formula' mi permette di aggiungerla dopo senza toccare l'oggetto
+//Vue.set (più globale)
+//this.$set (più "specifico")
+//segiuti da (object, propertyName, Value)
+//this.$set(object, propertyName, Value)
+//io per avere subito la classe aggiunta nell'oggetto l'ho richiamanta nel mounted
+>>>>>>> main
 
       },
 // --------------------FINE FUNZIONI PER CANCELLARE UN MESSAGGIO------
@@ -639,6 +661,10 @@ var app = new Vue ({
         this.$nextTick(function(){
             document.getElementById("box-messages").scrollTop = document.getElementById("box-messages").scrollHeight;
         });
+<<<<<<< HEAD
+=======
+        // console.log(this.$date('2018-08-08').format('DD/MM/YYYY'));
+>>>>>>> main
     },
 
 });
