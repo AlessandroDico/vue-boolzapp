@@ -402,9 +402,6 @@ var app = new Vue ({
         chatSearch: '',
         attualIndex: 0
     },
-    // mounted(){
-    //     this.funzione();
-    // },
     methods:{
         // funzione che al click deve far cambiare lo stato di active e prendere il valore dell'index dell'elemento cliccato
         changeChat(index){
@@ -564,7 +561,7 @@ var app = new Vue ({
                   this.$set(elementoCorrente.messages[j], 'hiddenChatMenu', 'hidden-menu')
               }
           }
-//pwe aggiungere una proprietà ad un oggetto devo tenere conto che Vue non la legge se la aggiungo dopo come ad esempio:
+//per aggiungere una proprietà ad un oggetto devo tenere conto che Vue non la legge se la aggiungo dopo come ad esempio:
 // this.contacts[this.active].messages[index].hiddenChatMenu = 'show-menu'
 //cosi facendo aggiungo ad ogni oggetto dell'array messages una chiave hiddenChatMenu con valore 'show-menu'
 //però cosi non la vedrebbe mai Vue o meglio la vede ma non me la fa usare nell'html
@@ -584,6 +581,23 @@ var app = new Vue ({
         // console.log(dayjs(this.date));
         this.addKey();
 
+    //PROVA PER METTERE ORA NEI BOX MESSAGGI
+        this.$nextTick(function(){
+            // dayjs.extend(customParseFormat);
+            for (var i = 0; i < this.contacts.length; i++) {
+                let elementoCorrente = this.contacts[i];
+                for (var j = 0; j < elementoCorrente.messages.length; j++) {
+                    let oggettoCorrente = elementoCorrente.messages[j];
+                    oggettoCorrente.date = dayjs(oggettoCorrente.date).format('HH:mm');
+                    // this.hours = dayjs(oggettoCorrente.date).format('DD/MM/YY');
+                    // console.log(dayjs(oggettoCorrente.date).format('DD/MM/YY'));
+                    // console.log(this.contacts[0].messages[0].date);
+                    console.log(oggettoCorrente.date);
+                }
+                // console.log(this.contacts[0].messages[0].date);
+
+            }
+        });
 
 
         // MESSO PER SCROLL GIA FATTO QUANDO APRO LA PAGINA

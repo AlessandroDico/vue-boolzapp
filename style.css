@@ -299,6 +299,7 @@ li.contact-list:hover {
 }
 
 .recived-messages, .sent-messages {
+    position: relative;
     max-width: 200px;
     display: inline-block;
     background-color: white;
@@ -361,6 +362,13 @@ li.contact-list:hover {
     cursor: pointer;
 }
 
+/* ------DATA NEL BOX DEL MESSAGGIO----- */
+p.text-message-box > small {
+    position: absolute;
+    bottom: 2px;
+    right: 3px;
+    font-size: 10px;
+}
 
 
 

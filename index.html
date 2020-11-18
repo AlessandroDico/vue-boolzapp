@@ -9,6 +9,9 @@
         <link rel="stylesheet" href="style.css">
         <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.9.6/dayjs.min.js"></script>
+        <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+        <script src="https://unpkg.com/dayjs@1.8.21/plugin/customParseFormat.js"></script>
+        <script>dayjs.extend(window.dayjs_plugin_customParseFormat)</script>
     </head>
     <body>
         <div id="root">
@@ -114,6 +117,7 @@
                                         @click="funzione(chatIndex)">
                                         <!-- @click="pushNuovaKey()" -->
                                         {{i.message}}
+                                        <small>{{ i.date }}</small>
                                     </p>
                                     <!-- <div :class="i.hiddenChatMenu"> -->
                                     <div class="deleteMenu" v-if="attualIndex == chatIndex && i.hiddenChatMenu == 'show-menu'">
