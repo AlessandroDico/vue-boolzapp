@@ -17,42 +17,50 @@ var app = new Vue ({
                     {
                         date: '10/01/2020 15:30:55',
                         message: 'Ue come va?',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '10/01/2020 15:50:00',
                         message: 'Tutto bene',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '10/01/2020 16:15:22',
                         message: 'Tu?',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '10/01/2020 16:20:22',
                         message: 'Tutto bene anche io',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '10/01/2020 16:25:22',
                         message: 'Hai bisogno?',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '10/01/2020 16:27:22',
                         message: 'no tu?',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '10/01/2020 16:29:22',
                         message: 'Nemmeno io',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '10/01/2020 16:30:22',
                         message: 'A posto allora',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                 ]
             },
@@ -64,27 +72,32 @@ var app = new Vue ({
                     {
                         date: '20/03/2020 16:30:00',
                         message: 'Ciao come stai?',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '20/03/2020 16:30:55',
                         message: 'Bene grazie! Stasera ci vediamo?',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '20/03/2020 16:35:00',
                         message: 'Mi piacerebbe ma devo andare a fare la spesa.',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '20/03/2020 16:38:00',
                         message: 'Ho finito le ossa.',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '20/03/2020 16:45:00',
                         message: 'Ah mi spiace.',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                 ]
             },
@@ -96,32 +109,38 @@ var app = new Vue ({
                     {
                         date: '28/03/2020 10:10:40',
                         message: 'Ciao come stai?',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 10:20:10',
                         message: 'Bene grazie?',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:15:22',
                         message: 'Son contento',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:20:22',
                         message: 'Anche io grazie',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:25:22',
                         message: 'E\' sempre un piacere parlare con te',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:35:22',
                         message: 'Grazie',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                 ]
             },
@@ -133,37 +152,44 @@ var app = new Vue ({
                     {
                         date: '10/01/2020 15:30:55',
                         message: 'Hai portato a spasso il cane?',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '10/01/2020 15:50:00',
                         message: 'Ricordati di dargli da mangiare',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:15:22',
                         message: 'Tranquillo!',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:25:22',
                         message: 'Il cane è scappato!',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:27:22',
                         message: 'Rincorrilo!',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:28:22',
                         message: 'Sai che non posso',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:30:22',
                         message: 'Tornerà',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                 ]
             },
@@ -175,17 +201,20 @@ var app = new Vue ({
                     {
                         date: '10/01/2020 15:30:55',
                         message: 'Hey ciao',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '10/01/2020 15:30:55',
                         message: 'Quanto tempo!',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '10/01/2020 15:50:00',
                         message: 'ci sarà un motivo',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
 
                 ]
@@ -198,27 +227,32 @@ var app = new Vue ({
                     {
                         date: '10/01/2020 15:30:55',
                         message: 'Lo sai che ha aperto una nuova pizzeria?',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '10/01/2020 15:50:00',
                         message: 'Sai che sono intollerante?',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:15:22',
                         message: 'Ah non lo sapevo!',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:25:22',
                         message: 'Ma l\'altro giorno hai mangiato la pizza',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:35:22',
                         message: 'Ma in fatti non sono itollerante alla pizza....',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
 
                 ]
@@ -231,22 +265,26 @@ var app = new Vue ({
                     {
                         date: '10/01/2020 15:30:55',
                         message: 'Ciao!',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '20/01/2020 16:30:55',
                         message: 'Ciao!',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '22/01/2020 17:30:55',
                         message: 'Ciao!',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '29/01/2020 18:30:55',
                         message: 'Ciao!',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
 
                 ]
@@ -259,22 +297,26 @@ var app = new Vue ({
                     {
                         date: '10/01/2020 15:30:55',
                         message: 'Hai sentito?',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '10/01/2020 15:50:00',
                         message: 'No',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:15:22',
                         message: 'Ah scusa!',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:15:22',
                         message: 'Tranquillo',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                 ]
             },
@@ -286,27 +328,32 @@ var app = new Vue ({
                     {
                         date: '10/01/2020 15:30:55',
                         message: 'Ciao!',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '10/01/2020 15:30:55',
                         message: 'Eri alla festa?',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '10/01/2020 15:50:00',
                         message: 'Si ero li',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:15:22',
                         message: 'Non ti ho visto!',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:25:22',
                         message: '-.-',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                 ]
             },
@@ -318,17 +365,20 @@ var app = new Vue ({
                     {
                         date: '10/01/2020 15:30:55',
                         message: 'Ciao',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '10/01/2020 15:50:00',
                         message: 'Ciao',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:15:22',
                         message: 'Ciao',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     }
                 ]
             },
@@ -340,57 +390,68 @@ var app = new Vue ({
                     {
                         date: '10/01/2020 15:30:55',
                         message: 'Stasera esci?',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '10/01/2020 15:50:00',
                         message: 'Si',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '10/01/2020 15:50:00',
                         message: 'dove ci vediamo?',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:15:22',
                         message: 'Solito posto',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:25:22',
                         message: 'Quale solito?',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:35:22',
                         message: 'Solito 1 o solito 2?',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:45:22',
                         message: 'Solito 2',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:47:22',
                         message: 'Manda indirizzo',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:55:22',
                         message: 'Via Solito 2',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:15:22',
                         message: 'Meglio che parto ora',
-                        status: 'recived-messages'
+                        status: 'recived-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                     {
                         date: '28/03/2020 16:15:22',
                         message: 'Ok a dopo',
-                        status: 'sent-messages'
+                        status: 'sent-messages',
+                        // hiddenChatMenu: 'hidden-menu',
                     },
                 ]
             },
@@ -398,12 +459,22 @@ var app = new Vue ({
         active: 0,
         userWriting: '',
         chatSearch: '',
+        // hiddenChatMenu: 'hidden-menu',
+        attualIndex: 0
     },
+    // mounted(){
+    //     this.funzione();
+    // },
     methods:{
         // funzione che al click deve far cambiare lo stato di active e prendere il valore dell'index dell'elemento cliccato
         changeChat(index){
             this.active = index;
             // console.log(index);
+
+        // MESSO PER SCROLL GIA FATTO QUANDO CAMBIO CHAT
+            this.$nextTick(function(){
+                document.getElementById("box-messages").scrollTop = document.getElementById("box-messages").scrollHeight;
+            });
         },
         sendMessages(){
         // se l'utente ha digitato almeno un carattere invia il messaggio
@@ -411,6 +482,7 @@ var app = new Vue ({
                 this.contacts[this.active].messages.push({
                     message: this.userWriting,
                     status: 'sent-messages',
+                    // hiddenChatMenu: 'hidden-menu'
                 });
 
                 /*// soluzione alternativa senza autoReply e setTimeout esterni
@@ -423,7 +495,12 @@ var app = new Vue ({
                 */
                 this.startReply();
 
-                this.scrollDown();
+                // this.scrollDown();
+
+                // soluzione per scroll down senza setTimeout
+                this.$nextTick(function(){
+                    document.getElementById("box-messages").scrollTop = document.getElementById("box-messages").scrollHeight;
+                });
 
             }
             // console.log(this.userWriting.length);
@@ -431,21 +508,31 @@ var app = new Vue ({
             // console.log(this.active);
         },
 
-
+// -------------RISPOSTA AUTOMATICA--------------------
         // funzione che aggiunge la risposta
         autoReply(){
             this.contacts[this.active].messages.push({
                 message: 'ok',
-                status: 'recived-messages'
+                status: 'recived-messages',
+                // hiddenChatMenu: 'hidden-menu'
             });
 
-            this.scrollDown();
 
+            // soluzione per scroll down senza setTimeout
+            this.$nextTick(function(){
+                document.getElementById("box-messages").scrollTop = document.getElementById("box-messages").scrollHeight;
+        // il $nextTick ci serve per far si che lo scroll avvenga una volta che si è aggiornato il dom altrimenti farebbe scroll solo in parte in quanto appena viene dato il comando lui fa scroll (vue.nextTick == $nextTick)
+        //scrollTop è una proprietà che se usata element.scrollTop ci restituisce il numero di px da dover 'scrollare' se invece è usata element.scrollTop = nPX; gli diciamo di quanti px deve fare scroll
+        //in questo caso gli diciamo fai scroll di scrollHeight ovvero l'altezza intera del contenuto di un div (per uno scroll costante)
+            });
+
+            // this.scrollDown();
             /*
             var objDiv = document.getElementById("your_div");
             objDiv.scrollTop = objDiv.scrollHeight;
             */
         },
+
         // funzione che fa scattare il timer per poi richiamare autoReply
         startReply(){
             setTimeout(this.autoReply, 1000);
@@ -453,23 +540,110 @@ var app = new Vue ({
         },
 
         //creiamo una funzione che fa seguire alla scroll bar il testo
-        scrollDown() {
+        // scrollDown() {
+        //
+        //     setTimeout(()=> {
+        //
+        //         var objDiv = document.getElementById("box-messages");
+        //         objDiv.scrollTop = objDiv.scrollHeight;
+        //
+        //     }, 1000);
+        // },
+// -------------FINE RISPOSTA AUTOMATICA--------------------
 
-            setTimeout(()=> {
 
-                var objDiv = document.getElementById("box-messages");
-                objDiv.scrollTop = objDiv.scrollHeight;
-
-            }, 1000);
-        },
-
+// FUNZIONE PER CERCARE NELL'INPUT IL NOME DEL CONTATTO
         searchInChat(item){
         // imposto una variabile per calcolare la prima lettera come maiuscola
             let up = this.chatSearch.charAt(0).toUpperCase() + this.chatSearch.slice(1);
             if (item.name.includes(up)) {
                 return true;
             }
-        }
+        },
+// FINE FUNZIONE PER CERCARE NELL'INPUT IL NOME DEL CONTATTO
+
+
+
+        showHiddenMenu(index){
+            if (this.contacts[this.active].messages[index].hiddenChatMenu == 'hidden-menu') {
+                this.contacts[this.active].messages[index].hiddenChatMenu = 'show-menu';
+            }else {
+                this.contacts[this.active].messages[index].hiddenChatMenu = 'hidden-menu';
+            }
+        },
+
+
+
+        funzione(index){
+            this.attualIndex = index;
+            console.log(this.contacts[this.active].messages[index]);
+            if (this.contacts[this.active].messages[index].hiddenChatMenu == 'hidden-menu') {
+                this.contacts[this.active].messages[index].hiddenChatMenu = 'show-menu'
+            } else {
+                this.contacts[this.active].messages[index].hiddenChatMenu = 'hidden-menu'
+            }
+
+            // this.$set(this.contacts[this.active].messages[index], 'hiddenChatMenu', 'hidden-menu')
+        },
+        // funzione2 (index){
+        //     if (this.contacts[this.active].messages[index].hiddenChatMenu == 'hidden-menu') {
+        //         this.contacts[this.active].messages[index].hiddenChatMenu = 'show-menu'
+        //     }else {
+        //         this.contacts[this.active].messages[index].hiddenChatMenu = 'hidden-menu'
+        //     }
+        // },
+
+
+// --------------------DUE FUNZIONI PER CANCELLARE UN MESSAGGIO------
+// metodo 1
+      //   removeElement(index) {
+      //     this.contacts[this.active].messages.splice(index, 1);
+      // },
+
+ // metodo 2
+
+        removeElement(index) {
+            // this.$delete(this.elemento, indiceElemento)
+          this.$delete(this.contacts[this.active].messages, index);
+      },
+
+      addKey() {
+
+          for (var i = 0; i < this.contacts.length; i++) {
+              let elementoCorrente = this.contacts[i];
+
+
+              for (var j = 0; j < elementoCorrente.messages.length; j++) {
+                  this.$set(elementoCorrente.messages[j], 'hiddenChatMenu', 'hidden-menu')
+              }
+          }
+//pwe aggiungere una proprietà ad un oggetto devo tenere conto che Vue non la legge se la aggiungo dopo come ad esempio:
+// this.contacts[this.active].messages[index].hiddenChatMenu = 'show-menu'
+//cosi facendo aggiungo ad ogni oggetto dell'array messages una chiave hiddenChatMenu con valore 'show-menu'
+//però cosi non la vedrebbe mai Vue o meglio la vede ma non me la fa usare nell'html
+//per raggirare questa cosa uso il $set che con quella 'formula' mi permette di aggiungerla dopo senza toccare l'oggetto
+//Vue.set (più globale)
+//this.$set (più "specifico")
+//segiuti da (object, propertyName, Value)
+//this.$set(object, propertyName, Value)
+//io per avere subito la classe aggiunta nell'oggetto l'ho richiamanta nel mounted
+
+      },
+// --------------------FINE FUNZIONI PER CANCELLARE UN MESSAGGIO------
 
     },
+
+    mounted: function(){
+        // console.log(dayjs(this.date));
+        this.addKey();
+
+
+
+        // MESSO PER SCROLL GIA FATTO QUANDO APRO LA PAGINA
+        // in questo caso è giusto mounted e non created perchè deve essere fatto appena carica la pagina
+        this.$nextTick(function(){
+            document.getElementById("box-messages").scrollTop = document.getElementById("box-messages").scrollHeight;
+        });
+    },
+
 });

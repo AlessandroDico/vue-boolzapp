@@ -8,6 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.9.6/dayjs.min.js"></script>
     </head>
     <body>
         <div id="root">
@@ -107,11 +108,18 @@
         <!-- corpo centrale con i messaggi -->
                         <div id="box-messages" class="main-message-chat">
                             <div class="first-contact-chat">
-                                <div class="message-chat" v-for="(i, chatIndex) in contacts[active].messages"
-                                >
-                                    <p :class="i.status">
+                                <div class="message-chat" v-for="(i, chatIndex) in contacts[active].messages">
+                                    <p :class="i.status"
+                                        class="text-message-box"
+                                        @click="funzione(chatIndex)">
+                                        <!-- @click="pushNuovaKey()" -->
                                         {{i.message}}
                                     </p>
+                                    <!-- <div :class="i.hiddenChatMenu"> -->
+                                    <div class="deleteMenu" v-if="attualIndex == chatIndex && i.hiddenChatMenu == 'show-menu'">
+                                        <p>Info messaggio</p>
+                                        <p @click="removeElement(chatIndex)">Cancella messaggio</p>
+                                    </div>
                                 </div>
 
                             </div>
@@ -124,18 +132,14 @@
                             v-model="userWriting"
                             @keyup.enter="sendMessages()">
                             <i class="fas fa-paper-plane"
-                                @click="sendMessages()"></i>
+                                @click="sendMessages()"
+                                :class="(userWriting.length > 0) ? 'ready-color' : ''"></i>
                         </div>
 
                     </div>
                 </div>
             </div>
         </div>
-
-
-
-
-
 
 
         <script src="assets/main.js" charset="utf-8"></script>

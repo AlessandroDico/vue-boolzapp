@@ -269,6 +269,7 @@ li.contact-list:hover {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    position: relative;
 }
 
 .message-writing {
@@ -314,16 +315,102 @@ li.contact-list:hover {
     background-color: #25d366;
 }
 
+/* cambia colore quando è pronto ad inviare */
+.message-writing > i.ready-color {
+    color: #25d366;
+}
+
+/* ---------menu nascosto per cancellare i messaggi---------- */
+
+/* .recived-messages + .hidden-menu {
+    display: none;
+}
+.sent-messages + .hidden-menu {
+    display: none;
+}
+.recived-messages + .show-menu {
+    display: block;
+    position: absolute;
+    align-self: flex-start;
+    bottom: -10px;
+    left: 55px;
+    background-color: #7e9e5f;
+    border-radius: 5px;
+    padding: 5px;
+}
+.sent-messages + .show-menu {
+    display: block;
+    align-self: flex-end;
+    position: absolute;
+    bottom: -10px;
+    right: 55px;
+    background-color: #7e9e5f;
+    border-radius: 5px;
+    padding: 5px;
+}
+.sent-messages + .show-menu > p {
+    cursor: pointer;
+}
+.recived-messages + .show-menu > p {
+    cursor: pointer;
+} */
+
+/* ALTERNATIVA */
 
 
+/* .hidden-class {
+    display: none;
+} */
+.recived-messages + .deleteMenu {
+    display: none;
+    position: absolute;
+    align-self: flex-start;
+    bottom: -10px;
+    left: 55px;
+    background-color: #7e9e5f;
+    border-radius: 5px;
+    padding: 5px;
+}
+.sent-messages + .deleteMenu {
+    display: none;
+    align-self: flex-end;
+    position: absolute;
+    bottom: -10px;
+    right: 55px;
+    background-color: #7e9e5f;
+    border-radius: 5px;
+    padding: 5px;
+}
 
+.recived-messages + .deleteMenu {
+    display: block;
+    position: absolute;
+    align-self: flex-start;
+    bottom: -10px;
+    left: 55px;
+    background-color: #7e9e5f;
+    border-radius: 5px;
+    padding: 5px;
+}
 
+.sent-messages + .deleteMenu {
+    display: block;
+    align-self: flex-end;
+    position: absolute;
+    bottom: -10px;
+    right: 55px;
+    background-color: #7e9e5f;
+    border-radius: 5px;
+    padding: 5px;
+}
 
+.sent-messages + .deleteMenu > p {
+    cursor: pointer;
+}
 
-
-
-
-
+.recived-messages + .deleteMenu > p {
+    cursor: pointer;
+}
 
 
 
