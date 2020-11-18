@@ -644,6 +644,7 @@ var app = new Vue ({
         this.$nextTick(function(){
             document.getElementById("box-messages").scrollTop = document.getElementById("box-messages").scrollHeight;
         });
+        // console.log(this.$date('2018-08-08').format('DD/MM/YYYY'));
     },
 
 });
