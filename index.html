@@ -116,7 +116,7 @@
                                         {{i.message}}
                                     </p>
                                     <!-- <div :class="i.hiddenChatMenu"> -->
-                                    <div class="hidden-class" :id="i.hiddenChatMenu">
+                                    <div class="deleteMenu" v-if="attualIndex == chatIndex && i.hiddenChatMenu == 'show-menu'">
                                         <p>Info messaggio</p>
                                         <p @click="removeElement(chatIndex)">Cancella messaggio</p>
                                     </div>

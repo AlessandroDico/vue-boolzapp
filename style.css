@@ -362,10 +362,10 @@ li.contact-list:hover {
 /* ALTERNATIVA */
 
 
-.hidden-class {
+/* .hidden-class {
     display: none;
-}
-.recived-messages + #hidden-menu {
+} */
+.recived-messages + .deleteMenu {
     display: none;
     position: absolute;
     align-self: flex-start;
@@ -375,7 +375,7 @@ li.contact-list:hover {
     border-radius: 5px;
     padding: 5px;
 }
-.sent-messages + #hidden-menu {
+.sent-messages + .deleteMenu {
     display: none;
     align-self: flex-end;
     position: absolute;
@@ -386,7 +386,7 @@ li.contact-list:hover {
     padding: 5px;
 }
 
-.recived-messages + #show-menu {
+.recived-messages + .deleteMenu {
     display: block;
     position: absolute;
     align-self: flex-start;
@@ -397,7 +397,7 @@ li.contact-list:hover {
     padding: 5px;
 }
 
-.sent-messages + #show-menu {
+.sent-messages + .deleteMenu {
     display: block;
     align-self: flex-end;
     position: absolute;
@@ -408,11 +408,11 @@ li.contact-list:hover {
     padding: 5px;
 }
 
-.sent-messages + #show-menu > p {
+.sent-messages + .deleteMenu > p {
     cursor: pointer;
 }
 
-.recived-messages + #show-menu > p {
+.recived-messages + .deleteMenu > p {
     cursor: pointer;
 }
 

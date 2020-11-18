@@ -582,16 +582,21 @@ var app = new Vue ({
         funzione(index){
             this.attualIndex = index;
             console.log(this.contacts[this.active].messages[index]);
-            // this.contacts[this.active].messages[index].hiddenChatMenu = 'show-menu'
-            // per aggiungere una proprietà ad un oggetto la 'formula' qua sopra sarebbe funzionante se non che Vue non legge proprietà aggiunte dopo.. per farlo c'è un modo per 'raggirare' questa cosa ed è col la seguente 'formula'
-            //  Vue.set più globale
-            // this.$set più 'specifico'
-            // seguiti da (object, propertyName, Value)
-            // this.$set(object, propertyName, Value)
-            // se volessi applicare più proprietà this.someObject = Object.assign({}, this.someObject, { a: 1, b: 2 })
-            this.$set(this.contacts[this.active].messages[index], 'hiddenChatMenu', 'show-menu')
-        },
+            if (this.contacts[this.active].messages[index].hiddenChatMenu == 'hidden-menu') {
+                this.contacts[this.active].messages[index].hiddenChatMenu = 'show-menu'
+            } else {
+                this.contacts[this.active].messages[index].hiddenChatMenu = 'hidden-menu'
+            }
 
+            // this.$set(this.contacts[this.active].messages[index], 'hiddenChatMenu', 'hidden-menu')
+        },
+        // funzione2 (index){
+        //     if (this.contacts[this.active].messages[index].hiddenChatMenu == 'hidden-menu') {
+        //         this.contacts[this.active].messages[index].hiddenChatMenu = 'show-menu'
+        //     }else {
+        //         this.contacts[this.active].messages[index].hiddenChatMenu = 'hidden-menu'
+        //     }
+        // },
 
 
 // --------------------DUE FUNZIONI PER CANCELLARE UN MESSAGGIO------
@@ -601,17 +606,31 @@ var app = new Vue ({
       // },
 
  // metodo 2
+
         removeElement(index) {
             // this.$delete(this.elemento, indiceElemento)
           this.$delete(this.contacts[this.active].messages, index);
+      },
+
+      addKey() {
+
+          for (var i = 0; i < this.contacts.length; i++) {
+              let elementoCorrente = this.contacts[i];
+
+
+              for (var j = 0; j < elementoCorrente.messages.length; j++) {
+                  this.$set(elementoCorrente.messages[j], 'hiddenChatMenu', 'hidden-menu')
+              }
+          }
+
       },
 // --------------------FINE FUNZIONI PER CANCELLARE UN MESSAGGIO------
 
     },
 
-    mounted(){
+    mounted: function(){
         // console.log(dayjs(this.date));
-
+        this.addKey();
 
 
 
