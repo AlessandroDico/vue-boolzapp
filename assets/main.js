@@ -221,7 +221,7 @@ var app = new Vue ({
                 ]
             },
             {
-                name: 'Dog cont3',
+                name: 'Dog address3',
                 photo: 'img/c_6.jpg',
                 thoughts: 'Lorem ipsum dolor sit.',
                 messages: [
@@ -259,7 +259,7 @@ var app = new Vue ({
                 ]
             },
             {
-                name: 'Rino cont',
+                name: 'Rino address',
                 photo: 'img/c_7.jpg',
                 thoughts: 'Lorem ipsum dolor sit.',
                 messages: [
@@ -291,7 +291,7 @@ var app = new Vue ({
                 ]
             },
             {
-                name: 'Bear cont',
+                name: 'Bear address',
                 photo: 'img/c_8.jpg',
                 thoughts: 'Lorem ipsum dolor sit.',
                 messages: [
@@ -322,7 +322,7 @@ var app = new Vue ({
                 ]
             },
             {
-                name: 'Cama cont',
+                name: 'Cama address',
                 photo: 'img/c_9.jpg',
                 thoughts: 'Lorem ipsum dolor sit.',
                 messages: [
@@ -359,7 +359,7 @@ var app = new Vue ({
                 ]
             },
             {
-                name: 'Ping cont',
+                name: 'Ping address',
                 photo: 'img/c_10.jpg',
                 thoughts: 'Lorem ipsum dolor sit.',
                 messages: [
@@ -553,8 +553,8 @@ var app = new Vue ({
 // FUNZIONE PER CERCARE NELL'INPUT IL NOME DEL CONTATTO
         searchInChat(item){
         // imposto una variabile per calcolare la prima lettera come maiuscola
-            let up = this.chatSearch.charAt(0).toUpperCase() + this.chatSearch.slice(1);
-            if (item.name.includes(up)) {
+        let letLower = item.name.charAt(0).toLowerCase() + item.name.slice(1);
+            if (letLower.includes(this.chatSearch)) {
                 return true;
             }
         },
