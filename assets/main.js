@@ -7,11 +7,12 @@ var app = new Vue ({
         user: {
             name: 'User',
             photo: 'img/profile.jpg',
-            thoughts: 'Sono un pug',
+            thoughts: 'Disponibile',
         },
+        emojis : ['🙂', '😀', '😂', '🤣', '😅', '😆', '❤️', '😁', '😇', '🥰', '🤩', '😋', '🤯',' 🤠', '😎', '🤓', '😨', '😢', '😈', '👾', '👍', '👋', '👌', '🤟', '🙈', '🙉', '🙊', '🐶', '🐯', '🐭', '🦔', '🐼', '🐨', '🐔', '🐸', '🦖'],
         contacts: [
             {
-                name: 'Cat cont1',
+                name: 'Mario',
                 photo: 'img/c_1.jpg',
                 thoughts: 'Lorem ipsum dolor sit.',
                 messages: [
@@ -52,13 +53,13 @@ var app = new Vue ({
                     },
                     {
                         date: '10/01/2020 16:30:22',
-                        message: 'A posto allora',
+                        message: 'Ok',
                         status: 'sent-messages',
                     },
                 ]
             },
             {
-                name: 'Dog cont1',
+                name: 'Luigi',
                 photo: 'img/c_2.jpg',
                 thoughts: 'Lorem ipsum dolor sit.',
                 messages: [
@@ -90,7 +91,7 @@ var app = new Vue ({
                 ]
             },
             {
-                name: 'Dog cont2',
+                name: 'Paola',
                 photo: 'img/c_3.jpg',
                 thoughts: 'Lorem ipsum dolor sit.',
                 messages: [
@@ -128,7 +129,7 @@ var app = new Vue ({
                 ]
             },
             {
-                name: 'Cat cont2',
+                name: 'Giulia',
                 photo: 'img/c_4.jpg',
                 thoughts: 'Lorem ipsum dolor sit.',
                 messages: [
@@ -170,7 +171,7 @@ var app = new Vue ({
                 ]
             },
             {
-                name: 'Cat cont3',
+                name: 'Giuliano',
                 photo: 'img/c_5.jpg',
                 thoughts: 'Lorem ipsum dolor sit.',
                 messages: [
@@ -193,7 +194,7 @@ var app = new Vue ({
                 ]
             },
             {
-                name: 'Dog address3',
+                name: 'Sara',
                 photo: 'img/c_6.jpg',
                 thoughts: 'Lorem ipsum dolor sit.',
                 messages: [
@@ -219,14 +220,14 @@ var app = new Vue ({
                     },
                     {
                         date: '28/03/2020 16:35:22',
-                        message: 'Ma in fatti non sono itollerante alla pizza....',
+                        message: 'Ma in fatti non sono intollerante alla pizza....',
                         status: 'recived-messages',
                     },
 
                 ]
             },
             {
-                name: 'Rino address',
+                name: 'Rino',
                 photo: 'img/c_7.jpg',
                 thoughts: 'Lorem ipsum dolor sit.',
                 messages: [
@@ -254,7 +255,7 @@ var app = new Vue ({
                 ]
             },
             {
-                name: 'Bear address',
+                name: 'Marco',
                 photo: 'img/c_8.jpg',
                 thoughts: 'Lorem ipsum dolor sit.',
                 messages: [
@@ -281,7 +282,7 @@ var app = new Vue ({
                 ]
             },
             {
-                name: 'Cama address',
+                name: 'Martino',
                 photo: 'img/c_9.jpg',
                 thoughts: 'Lorem ipsum dolor sit.',
                 messages: [
@@ -292,28 +293,33 @@ var app = new Vue ({
                     },
                     {
                         date: '10/01/2020 15:30:55',
-                        message: 'Eri alla festa?',
+                        message: 'Come va?',
                         status: 'sent-messages',
                     },
                     {
                         date: '10/01/2020 15:50:00',
-                        message: 'Si ero li',
+                        message: 'Tutto bene grazie',
+                        status: 'recived-messages',
+                    },
+                    {
+                        date: '10/01/2020 15:51:00',
+                        message: 'A te come va?',
                         status: 'recived-messages',
                     },
                     {
                         date: '28/03/2020 16:15:22',
-                        message: 'Non ti ho visto!',
+                        message: 'Non mi lamento',
                         status: 'sent-messages',
                     },
                     {
                         date: '28/03/2020 16:25:22',
-                        message: '-.-',
+                        message: 'Bene!',
                         status: 'recived-messages',
                     },
                 ]
             },
             {
-                name: 'Ping address',
+                name: 'Pino',
                 photo: 'img/c_10.jpg',
                 thoughts: 'Lorem ipsum dolor sit.',
                 messages: [
@@ -335,7 +341,7 @@ var app = new Vue ({
                 ]
             },
             {
-                name: 'Tarta cont',
+                name: 'Giustino',
                 photo: 'img/c_11.jpg',
                 thoughts: 'Lorem ipsum dolor sit.',
                 messages: [
@@ -400,7 +406,8 @@ var app = new Vue ({
         active: 0,
         userWriting: '',
         chatSearch: '',
-        attualIndex: 0
+        attualIndex: 0,
+        emojiCondition: false,
     },
     methods:{
         // funzione che al click deve far cambiare lo stato di active e prendere il valore dell'index dell'elemento cliccato
@@ -412,27 +419,21 @@ var app = new Vue ({
             this.$nextTick(function(){
                 document.getElementById("box-messages").scrollTop = document.getElementById("box-messages").scrollHeight;
             });
+
+            this.emojiCondition = false;
+
         },
         sendMessages(){
         // se l'utente ha digitato almeno un carattere invia il messaggio
-            if (this.userWriting.length > 0 ) {
+            if (this.userWriting.trim().length > 0 ) {
                 this.contacts[this.active].messages.push({
                     message: this.userWriting,
                     status: 'sent-messages',
-                    // hiddenChatMenu: 'hidden-menu'
+                    date: dayjs().format('HH:mm'),
                 });
 
-                /*// soluzione alternativa senza autoReply e setTimeout esterni
-                setTimeout(()=>{
-                    this.contacts[this.active].messages.push({
-                        message: 'ok',
-                        status: 'recived-messages'
-                    });
-                }, 1000);
-                */
-                this.startReply();
 
-                // this.scrollDown();
+                this.startReply();
 
                 // soluzione per scroll down senza setTimeout
                 this.$nextTick(function(){
@@ -440,53 +441,34 @@ var app = new Vue ({
                 });
 
             }
-            // console.log(this.userWriting.length);
+            this.emojiCondition = false;
             this.userWriting = '';
-            // console.log(this.active);
         },
 
 // -------------RISPOSTA AUTOMATICA--------------------
         // funzione che aggiunge la risposta
         autoReply(){
             this.contacts[this.active].messages.push({
-                message: 'ok',
+                message: 'Ciao tutto bene e te?',
                 status: 'recived-messages',
-                // hiddenChatMenu: 'hidden-menu'
+                date: dayjs().format('HH:mm'),
             });
 
 
             // soluzione per scroll down senza setTimeout
             this.$nextTick(function(){
                 document.getElementById("box-messages").scrollTop = document.getElementById("box-messages").scrollHeight;
-        // il $nextTick ci serve per far si che lo scroll avvenga una volta che si è aggiornato il dom altrimenti farebbe scroll solo in parte in quanto appena viene dato il comando lui fa scroll (vue.nextTick == $nextTick)
-        //scrollTop è una proprietà che se usata element.scrollTop ci restituisce il numero di px da dover 'scrollare' se invece è usata element.scrollTop = nPX; gli diciamo di quanti px deve fare scroll
-        //in questo caso gli diciamo fai scroll di scrollHeight ovvero l'altezza intera del contenuto di un div (per uno scroll costante)
 
             });
 
-            // this.scrollDown();
-            /*
-            var objDiv = document.getElementById("your_div");
-            objDiv.scrollTop = objDiv.scrollHeight;
-            */
         },
 
         // funzione che fa scattare il timer per poi richiamare autoReply
         startReply(){
-            setTimeout(this.autoReply, 1000);
+            setTimeout(this.autoReply, 2000);
 
         },
 
-        //creiamo una funzione che fa seguire alla scroll bar il testo
-        // scrollDown() {
-        //
-        //     setTimeout(()=> {
-        //
-        //         var objDiv = document.getElementById("box-messages");
-        //         objDiv.scrollTop = objDiv.scrollHeight;
-        //
-        //     }, 1000);
-        // },
 // -------------FINE RISPOSTA AUTOMATICA--------------------
 
 
@@ -510,14 +492,6 @@ var app = new Vue ({
             }
         },
 
-
-        // pushNuovaKey(){
-        //     if (this.hiddenChatMenu == 'hidden-menu') {
-        //         this.contacts[this.active].messages[0].hiddenChatMenu = 'show-menu',
-        //
-        //         console.log(this.contacts[this.active].messages);
-        //     }
-        // },
         funzione(index){
             this.attualIndex = index;
             console.log(this.contacts[this.active].messages[index]);
@@ -527,15 +501,8 @@ var app = new Vue ({
                 this.contacts[this.active].messages[index].hiddenChatMenu = 'hidden-menu'
             }
 
-            // this.$set(this.contacts[this.active].messages[index], 'hiddenChatMenu', 'hidden-menu')
         },
-        // funzione2 (index){
-        //     if (this.contacts[this.active].messages[index].hiddenChatMenu == 'hidden-menu') {
-        //         this.contacts[this.active].messages[index].hiddenChatMenu = 'show-menu'
-        //     }else {
-        //         this.contacts[this.active].messages[index].hiddenChatMenu = 'hidden-menu'
-        //     }
-        // },
+
 
 
 // --------------------DUE FUNZIONI PER CANCELLARE UN MESSAGGIO------
@@ -547,7 +514,6 @@ var app = new Vue ({
  // metodo 2
 
         removeElement(index) {
-            // this.$delete(this.elemento, indiceElemento)
           this.$delete(this.contacts[this.active].messages, index);
       },
 
@@ -561,24 +527,25 @@ var app = new Vue ({
                   this.$set(elementoCorrente.messages[j], 'hiddenChatMenu', 'hidden-menu')
               }
           }
-//per aggiungere una proprietà ad un oggetto devo tenere conto che Vue non la legge se la aggiungo dopo come ad esempio:
-// this.contacts[this.active].messages[index].hiddenChatMenu = 'show-menu'
-//cosi facendo aggiungo ad ogni oggetto dell'array messages una chiave hiddenChatMenu con valore 'show-menu'
-//però cosi non la vedrebbe mai Vue o meglio la vede ma non me la fa usare nell'html
-//per raggirare questa cosa uso il $set che con quella 'formula' mi permette di aggiungerla dopo senza toccare l'oggetto
-//Vue.set (più globale)
-//this.$set (più "specifico")
-//segiuti da (object, propertyName, Value)
-//this.$set(object, propertyName, Value)
-//io per avere subito la classe aggiunta nell'oggetto l'ho richiamanta nel mounted
+
 
       },
 // --------------------FINE FUNZIONI PER CANCELLARE UN MESSAGGIO------
 
+    //EMOJI
+        emojiVisible() {
+
+            this.emojiCondition = !this.emojiCondition;
+        },
+
+        emojiPush(item) {
+            // this.contacts[this.active].messages.push({})
+            this.userWriting += item;
+            // console.log(this.userWriting);
+        },
     },
 
     mounted: function(){
-        // console.log(dayjs(this.date));
         this.addKey();
 
     //PROVA PER METTERE ORA NEI BOX MESSAGGI
@@ -588,24 +555,18 @@ var app = new Vue ({
                 let elementoCorrente = this.contacts[i];
                 for (var j = 0; j < elementoCorrente.messages.length; j++) {
                     let oggettoCorrente = elementoCorrente.messages[j];
-                    oggettoCorrente.date = dayjs(oggettoCorrente.date).format('HH:mm');
-                    // this.hours = dayjs(oggettoCorrente.date).format('DD/MM/YY');
-                    // console.log(dayjs(oggettoCorrente.date).format('DD/MM/YY'));
-                    // console.log(this.contacts[0].messages[0].date);
+                    oggettoCorrente.date = dayjs(oggettoCorrente.date, 'DD MM YYYY HH mm ss').format('HH:mm');
                     console.log(oggettoCorrente.date);
                 }
-                // console.log(this.contacts[0].messages[0].date);
 
             }
         });
 
 
         // MESSO PER SCROLL GIA FATTO QUANDO APRO LA PAGINA
-        // in questo caso è giusto mounted e non created perchè deve essere fatto appena carica la pagina
         this.$nextTick(function(){
             document.getElementById("box-messages").scrollTop = document.getElementById("box-messages").scrollHeight;
         });
-        // console.log(this.$date('2018-08-08').format('DD/MM/YYYY'));
     },
 
 });

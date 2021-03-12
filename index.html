@@ -2,7 +2,8 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Boolzapp</title>
+        <title>NewsApp</title>
+        <link rel="shortcut icon" href="https://web.whatsapp.com/img/favicon/1x/favicon.png">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -129,8 +130,15 @@
                             </div>
                         </div>
         <!-- barra di scrittura e invio messaggi-->
+                        <!-- <div class="">
+                            <p v-for="emoji in emojis">{{ emoji }}</p>
+                        </div> -->
                         <div class="message-writing">
-                            <i class="fas fa-smile"></i>
+                            <p @click="emojiVisible()">😀
+                                <div class="hidden-emojis" v-if="emojiCondition">
+                                    <p v-for="emoji in emojis" @click="emojiPush(emoji)">{{ emoji }}</p>
+                                </div>
+                            </p>
                             <input type="text" class="writing-input"
                             placeholder="scrivi un messaggio"
                             v-model="userWriting"

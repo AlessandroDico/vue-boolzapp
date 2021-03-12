@@ -280,6 +280,7 @@ li.contact-list:hover {
     justify-content: space-around;
     align-items: center;
     border-top: 1px solid #bdb9b5;
+    position: relative;
 }
 
 .message-writing > input {
@@ -292,7 +293,7 @@ li.contact-list:hover {
     outline: none;
 }
 
-.message-writing > i {
+.message-writing > i, .message-writing > p {
     font-size: 25px;
     cursor: pointer;
     color: #a09e9e;
@@ -371,7 +372,23 @@ p.text-message-box > small {
 }
 
 
+.hidden-emojis {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 0;
+    bottom: 70px;
+    z-index: 3;
+}
 
+.hidden-emojis p {
+    font-size: 25px;
+    margin: 10px;
+    cursor: pointer;
+}
 
 
 
